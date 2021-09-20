@@ -1,0 +1,360 @@
+getwd()
+setwd("C:/users/xxxx/Desktop")
+
+Acquisition_Variables=c("LOAN_ID", "ORIG_CHN", "Seller.Name", "ORIG_RT", "ORIG_AMT", "ORIG_TRM", "ORIG_DTE"
+                        ,"FRST_DTE", "OLTV", "OCLTV", "NUM_BO", "DTI", "CSCORE_B", "FTHB_FLG", "PURPOSE", "PROP_TYP"
+                        ,"NUM_UNIT", "OCC_STAT", "STATE", "ZIP_3", "MI_PCT", "Prod.Type", "CSCORE_C", "MI_TYPE", "RELOCAT_FLG")
+
+Acquisition_ColClasses = c("character", "character", "character", "numeric", "numeric", "integer", "character", "character", "numeric",
+                           "numeric", "character", "numeric", "numeric", "character", "character", "character", "character", "character",
+                           "character", "character", "numeric", "character", "numeric", "numeric", "character")
+
+Acq_03Q1data <- read.table(unz("Acquisition_All.zip", "Acquisition_2003Q1.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_03Q2data <- read.table(unz("Acquisition_All.zip", "Acquisition_2003Q2.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_03Q3data <- read.table(unz("Acquisition_All.zip", "Acquisition_2003Q3.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_03Q4data <- read.table(unz("Acquisition_All.zip", "Acquisition_2003Q4.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+
+Acq_04Q1data <- read.table(unz("Acquisition_All.zip", "Acquisition_2004Q1.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_04Q2data <- read.table(unz("Acquisition_All.zip", "Acquisition_2004Q2.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_04Q3data <- read.table(unz("Acquisition_All.zip", "Acquisition_2004Q3.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_04Q4data <- read.table(unz("Acquisition_All.zip", "Acquisition_2004Q4.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+
+Acq_05Q1data <- read.table(unz("Acquisition_All.zip", "Acquisition_2005Q1.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_05Q2data <- read.table(unz("Acquisition_All.zip", "Acquisition_2005Q2.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_05Q3data <- read.table(unz("Acquisition_All.zip", "Acquisition_2005Q3.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_05Q4data <- read.table(unz("Acquisition_All.zip", "Acquisition_2005Q4.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+
+Acq_06Q1data <- read.table(unz("Acquisition_All.zip", "Acquisition_2006Q1.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_06Q2data <- read.table(unz("Acquisition_All.zip", "Acquisition_2006Q2.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_06Q3data <- read.table(unz("Acquisition_All.zip", "Acquisition_2006Q3.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_06Q4data <- read.table(unz("Acquisition_All.zip", "Acquisition_2006Q4.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+
+Acq_07Q1data <- read.table(unz("Acquisition_All.zip", "Acquisition_2007Q1.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_07Q2data <- read.table(unz("Acquisition_All.zip", "Acquisition_2007Q2.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_07Q3data <- read.table(unz("Acquisition_All.zip", "Acquisition_2007Q3.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_07Q4data <- read.table(unz("Acquisition_All.zip", "Acquisition_2007Q4.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+
+Acq_08Q1data <- read.table(unz("Acquisition_All.zip", "Acquisition_2008Q1.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_08Q2data <- read.table(unz("Acquisition_All.zip", "Acquisition_2008Q2.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_08Q3data <- read.table(unz("Acquisition_All.zip", "Acquisition_2008Q3.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_08Q4data <- read.table(unz("Acquisition_All.zip", "Acquisition_2008Q4.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+
+Acq_09Q1data <- read.table(unz("Acquisition_All.zip", "Acquisition_2009Q1.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_09Q2data <- read.table(unz("Acquisition_All.zip", "Acquisition_2009Q2.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_09Q3data <- read.table(unz("Acquisition_All.zip", "Acquisition_2009Q3.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_09Q4data <- read.table(unz("Acquisition_All.zip", "Acquisition_2009Q4.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+
+Acq_10Q1data <- read.table(unz("Acquisition_All.zip", "Acquisition_2010Q1.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_10Q2data <- read.table(unz("Acquisition_All.zip", "Acquisition_2010Q2.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_10Q3data <- read.table(unz("Acquisition_All.zip", "Acquisition_2010Q3.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+Acq_10Q4data <- read.table(unz("Acquisition_All.zip", "Acquisition_2010Q4.txt"), header=F, 
+                           col.names = Acquisition_Variables,colClasses = Acquisition_ColClasses, sep="|")
+
+Performance_Variables = c("LOAN_ID", "MthRptPrd", "ServicerName", "LAST_RT", "LAST_UPB", "LoanAge", "MthsToLegalMat"
+                          , "AdjMonthToMat", "MaturityDate", "MSA", "DelqStatus", "MOD_FLG", "ZB_Code", 
+                          "ZBDTE", "LPI_DTE", "FCC_DTE","DISP_DT", "FCC_C", "PP_C", "AR_C", "IE_C", "TAX_C", "NS_PR",
+                          "CE_PR", "RMW_PR", "O_PR", "NONI_UPB", "PRIF_UPB_FH", "REP_FLG", "PRIF_UPB_OT", "TRANSFER_FLG")
+
+Performance_ColClasses = c("character", "character", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "character",
+                           "character", "character", "character", "character", "character", "character", "character", "character",
+                           "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "character", "numeric", "character")
+
+Pfm_05Q1data <- read.table(unz("Performance_All.zip", "Performance_2005Q1.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_05Q2data <- read.table(unz("Performance_All.zip", "Performance_2005Q2.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_05Q3data <- read.table(unz("Performance_All.zip", "Performance_2005Q3.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_05Q4data <- read.table(unz("Performance_All.zip", "Performance_2005Q4.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+
+Pfm_06Q1data <- read.table(unz("Performance_All.zip", "Performance_2006Q1.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_06Q2data <- read.table(unz("Performance_All.zip", "Performance_2006Q2.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_06Q3data <- read.table(unz("Performance_All.zip", "Performance_2006Q3.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_06Q4data <- read.table(unz("Performance_All.zip", "Performance_2006Q4.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+
+Pfm_07Q1data <- read.table(unz("Performance_All.zip", "Performance_2007Q1.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_07Q2data <- read.table(unz("Performance_All.zip", "Performance_2007Q2.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_07Q3data <- read.table(unz("Performance_All.zip", "Performance_2007Q3.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_07Q4data <- read.table(unz("Performance_All.zip", "Performance_2007Q4.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+
+Pfm_08Q1data <- read.table(unz("Performance_All.zip", "Performance_2008Q1.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_08Q2data <- read.table(unz("Performance_All.zip", "Performance_2008Q2.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_08Q3data <- read.table(unz("Performance_All.zip", "Performance_2008Q3.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_08Q4data <- read.table(unz("Performance_All.zip", "Performance_2008Q4.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+
+Pfm_09Q1data <- read.table(unz("Performance_All.zip", "Performance_2009Q1.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_09Q2data <- read.table(unz("Performance_All.zip", "Performance_2009Q2.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_09Q3data <- read.table(unz("Performance_All.zip", "Performance_2009Q3.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_09Q4data <- read.table(unz("Performance_All.zip", "Performance_2009Q4.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+
+Pfm_10Q1data <- read.table(unz("Performance_All.zip", "Performance_2010Q1.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_10Q2data <- read.table(unz("Performance_All.zip", "Performance_2010Q2.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_10Q3data <- read.table(unz("Performance_All.zip", "Performance_2010Q3.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+Pfm_10Q4data <- read.table(unz("Performance_All.zip", "Performance_2010Q4.txt"), header=F, 
+                           col.names = Performance_Variables,colClasses = Performance_ColClasses, sep="|")
+
+
+Acq_total<- rbind(Acq_03Q1data,Acq_03Q2data,Acq_03Q3data,Acq_03Q4data,Acq_04Q1data,Acq_04Q2data,Acq_04Q3data,Acq_04Q4data,
+                  Acq_05Q1data,Acq_05Q2data,Acq_05Q3data,Acq_05Q4data,Acq_06Q1data,Acq_06Q2data,Acq_06Q3data,Acq_06Q4data,
+                  Acq_07Q1data,Acq_07Q2data,Acq_07Q3data,Acq_07Q4data)
+
+Acq03<- rbind(Acq_03Q1data,Acq_03Q2data,Acq_03Q3data,Acq_03Q4data)
+Acq04<- rbind(Acq_04Q1data,Acq_04Q2data,Acq_04Q3data,Acq_04Q4data)
+Acq05<- rbind(Acq_05Q1data,Acq_05Q2data,Acq_05Q3data,Acq_05Q4data)
+Acq06<- rbind(Acq_06Q1data,Acq_06Q2data,Acq_06Q3data,Acq_06Q4data)
+Acq07<- rbind(Acq_07Q1data,Acq_07Q2data,Acq_07Q3data,Acq_07Q4data)
+Acq08<- rbind(Acq_08Q1data,Acq_08Q2data,Acq_08Q3data,Acq_08Q4data)
+Acq09<- rbind(Acq_09Q1data,Acq_09Q2data,Acq_09Q3data,Acq_09Q4data)
+Acq10<- rbind(Acq_10Q1data,Acq_10Q2data,Acq_10Q3data,Acq_10Q4data)
+
+rm(Acq_03Q1data,Acq_03Q2data,Acq_03Q3data,Acq_03Q4data,Acq_04Q1data,Acq_04Q2data,Acq_04Q3data,Acq_04Q4data,
+   Acq_05Q1data,Acq_05Q2data,Acq_05Q3data,Acq_05Q4data,Acq_06Q1data,Acq_06Q2data,Acq_06Q3data,Acq_06Q4data,
+   Acq_07Q1data,Acq_07Q2data,Acq_07Q3data,Acq_07Q4data,Acq_08Q1data,Acq_08Q2data,Acq_08Q3data,Acq_08Q4data,
+   Acq_09Q1data,Acq_09Q2data,Acq_09Q3data,Acq_09Q4data,Acq_10Q1data,Acq_10Q2data,Acq_10Q3data,Acq_10Q4data)
+
+
+Pfm_total<- rbind(Pfm_03Q1data,Pfm_03Q2data,Pfm_03Q3data,Pfm_03Q4data,Pfm_04Q1data,Pfm_04Q2data,Pfm_04Q3data,Pfm_04Q4data,
+                  Pfm_05Q1data,Pfm_05Q2data,Pfm_05Q3data,Pfm_05Q4data,Pfm_06Q1data,Pfm_06Q2data,Pfm_06Q3data,Pfm_06Q4data,
+                  Pfm_07Q1data,Pfm_07Q2data,Pfm_07Q3data,Pfm_07Q4data)
+
+Pfm05<- rbind(Pfm_05Q1data,Pfm_05Q2data,Pfm_05Q3data,Pfm_05Q4data)
+Pfm06<- rbind(Pfm_06Q1data,Pfm_06Q2data,Pfm_06Q3data,Pfm_06Q4data)
+Pfm07<- rbind(Pfm_07Q1data,Pfm_07Q2data,Pfm_07Q3data,Pfm_07Q4data)
+Pfm08<- rbind(Pfm_08Q1data,Pfm_08Q2data,Pfm_08Q3data,Pfm_08Q4data)
+
+
+###remove datasets
+rm(Pfm_05Q1data,Pfm_05Q2data,Pfm_05Q3data,Pfm_05Q4data)
+head(Pfm_05Q1data)
+df1<-subset(Pfm_05Q1data, select= -c(FCC_C,PP_C,AR_C,IE_C,TAX_C,NS_PR,RMW_PR,O_PR,NONI_UPB,PRIF_UPB_FH,REP_FLG))
+df2<-subset(Pfm_05Q2data, select= -c(FCC_C,PP_C,AR_C,IE_C,TAX_C,NS_PR,RMW_PR,O_PR,NONI_UPB,PRIF_UPB_FH,REP_FLG))
+df3<-subset(Pfm_05Q3data, select= -c(FCC_C,PP_C,AR_C,IE_C,TAX_C,NS_PR,RMW_PR,O_PR,NONI_UPB,PRIF_UPB_FH,REP_FLG))
+df4<-subset(Pfm_05Q4data, select= -c(FCC_C,PP_C,AR_C,IE_C,TAX_C,NS_PR,RMW_PR,O_PR,NONI_UPB,PRIF_UPB_FH,REP_FLG))
+Pfm05<- rbind(df1,df2,df3,df4)
+
+
+
+Pfm08Clean<-data.frame(Pfm08, na.rm = TRUE)
+rm(Pfm08Clean)
+
+
+
+
+######aggregate dataset################################################
+
+head(Pfm08)
+unique(Pfm08$LPI_DTE)
+
+head(Acq06)
+unique(Acq06$Seller.Name)
+unique(Acq06$STATE)
+
+d04frame<- data.frame(Acq04$OLTV,Acq04$OCLTV,Acq04$CSCORE_B,Acq04$CSCORE_C,Acq04$DTI,Acq04$ORIG_RT)
+d05frame<- data.frame(Acq05$OLTV,Acq05$OCLTV,Acq05$CSCORE_B,Acq05$CSCORE_C,Acq05$DTI,Acq05$ORIG_RT)
+d06frame<- data.frame(Acq06$OLTV,Acq06$OCLTV,Acq06$CSCORE_B,Acq06$CSCORE_C,Acq06$DTI,Acq06$ORIG_RT)
+d07frame<- data.frame(Acq07$OLTV,Acq07$OCLTV,Acq07$CSCORE_B,Acq07$CSCORE_C,Acq07$DTI,Acq07$ORIG_RT)
+d08frame<- data.frame(Acq08$OLTV,Acq08$OCLTV,Acq08$CSCORE_B,Acq08$CSCORE_C,Acq08$DTI,Acq08$ORIG_RT)
+d09frame<- data.frame(Acq09$OLTV,Acq09$OCLTV,Acq09$CSCORE_B,Acq09$CSCORE_C,Acq09$DTI,Acq09$ORIG_RT)
+d10frame<- data.frame(Acq10$OLTV,Acq10$OCLTV,Acq10$CSCORE_B,Acq10$CSCORE_C,Acq10$DTI,Acq10$ORIG_RT)
+
+d04frame2<- data.frame(Acq04$OLTV,Acq04$OCLTV,Acq04$CSCORE_B,Acq04$CSCORE_C,Acq04$DTI,Acq04$ORIG_RT, na.rm= TRUE)
+d04mean<-aggregate(d04frame, by=list(d04frame$Acq04.OLTV), FUN=mean, na.rm=TRUE)
+d05frame2<- data.frame(Acq05$OLTV,Acq05$OCLTV,Acq05$CSCORE_B,Acq05$CSCORE_C,Acq05$DTI,Acq05$ORIG_RT, na.rm= TRUE)
+d05mean<-aggregate(d05frame, by=list(d05frame$Acq05.OLTV), FUN=mean, na.rm=TRUE)
+d06frame2<- data.frame(Acq06$OLTV,Acq06$OCLTV,Acq06$CSCORE_B,Acq06$CSCORE_C,Acq06$DTI,Acq06$ORIG_RT, na.rm= TRUE)
+d06mean<-aggregate(d06frame, by=list(d06frame$Acq06.OLTV), FUN=mean, na.rm=TRUE)
+d07frame2<- data.frame(Acq07$OLTV,Acq07$OCLTV,Acq07$CSCORE_B,Acq07$CSCORE_C,Acq07$DTI,Acq07$ORIG_RT, na.rm= TRUE)
+d07mean<-aggregate(d07frame, by=list(d07frame$Acq07.OLTV), FUN=mean, na.rm=TRUE)
+d08frame2<- data.frame(Acq08$OLTV,Acq08$OCLTV,Acq08$CSCORE_B,Acq08$CSCORE_C,Acq08$DTI,Acq08$ORIG_RT, na.rm= TRUE)
+d08mean<-aggregate(d08frame, by=list(d08frame$Acq08.OLTV), FUN=mean, na.rm=TRUE)
+d09frame2<- data.frame(Acq09$OLTV,Acq09$OCLTV,Acq09$CSCORE_B,Acq09$CSCORE_C,Acq09$DTI,Acq09$ORIG_RT, na.rm= TRUE)
+d09mean<-aggregate(d09frame, by=list(d09frame$Acq09.OLTV), FUN=mean, na.rm=TRUE)
+
+names(d04mean)<-c("index","OLTV","OCLTV","CSCORE_B","CSCORE_B","DTI","ORIG_RT")
+names(d05mean)<-c("index","OLTV","OCLTV","CSCORE_B","CSCORE_B","DTI","ORIG_RT")
+names(d06mean)<-c("index","OLTV","OCLTV","CSCORE_B","CSCORE_B","DTI","ORIG_RT")
+names(d07mean)<-c("index","OLTV","OCLTV","CSCORE_B","CSCORE_B","DTI","ORIG_RT")
+names(d08mean)<-c("index","OLTV","OCLTV","CSCORE_B","CSCORE_B","DTI","ORIG_RT")
+
+head(d04mean)
+
+
+plot(d04mean$OLTV,d04mean$ORIG_RT, type="p", xlim = c(70,90))
+plot(d04mean$OLTV,d04mean$DTI, type="p")
+plot(d04mean$OLTV,d04mean$CSCORE_B, type="p", xlim = c(60,100))
+plot(d04mean$OLTV,d04mean$ORIG_OCLTV, type="p", xlim = c(30,100))
+
+plot(d05mean$OLTV,d05mean$ORIG_RT, type="p", xlim = c(70,90))
+plot(d05mean$OLTV,d05mean$DTI, type="p")
+plot(d05mean$OLTV,d05mean$CSCORE_B, type="p", xlim = c(60,100))
+plot(d05mean$OLTV,d05mean$ORIG_OCLTV, type="p", xlim = c(30,100))
+
+plot(d06mean$OLTV,d06mean$ORIG_RT, type="p", pch=16, cex=2, col="cadetblue",main = "", xlim = c(70,90))
+abline(v=80, col="blue")
+
+plot(d06mean$OLTV,d06mean$DTI, type="p")
+plot(d06mean$OLTV,d06mean$CSCORE_B, type="p", xlim = c(60,100))
+plot(d06mean$OLTV,d06mean$ORIG_OCLTV, type="p", xlim = c(30,100))
+
+plot(d05mean$OCLTV,d05mean$ORIG_RT, type="p", xlim = c(70,90))
+plot(d05mean$OCLTV,d05mean$DTI, type="p")
+plot(d05mean$OCLTV,d05mean$CSCORE_B, type="p", xlim = c(60,100))
+plot(d05mean$OCLTV,d05mean$ORIG_OCLTV, type="p", xlim = c(30,100))
+
+
+
+plot(d06mean$Acq06.OLTV,d06mean$Acq06.ORIG_RT, type="l", xlim = c(70,90))
+plot(d06mean$Acq06.OLTV,d06mean$Acq06.DTI, type="l")
+plot(d06mean$Acq06.OLTV,d06mean$Acq06.CSCORE_B, type="p", xlim = c(75,85))
+plot(d06mean$Acq06.OLTV,d06mean$Acq06.ORIG_RT, type="l", xlim = c(70,90))
+
+
+plot(d07mean$Acq07.OLTV,d07mean$Acq07.CSCORE_B, type="p", xlim = c(75,96))
+
+
+
+
+
+
+
+head(d05frame)
+head(d05mean)
+nrow(d05mean)
+
+head(dframe)
+names(dframe)<-c("OLTV","OCLTV","CSCORE_B","CSCORE_C","DTI","IRATE")
+
+
+###graphical investigation  loan origination
+plot(Acq_total$OLTV, type = "h")
+plot
+d<-density(Acq_total$OLTV)
+
+d04<-density(Acq04$OLTV)
+d05<-density(Acq05$OLTV)
+d06<-density(Acq06$OLTV)
+d07<-density(Acq07$OLTV)
+d08<-density(Acq08$OLTV)
+d09<-density(Acq09$OLTV)
+d10<-density(Acq10$OLTV)
+
+####
+par(bg="white")
+plot(d06, col = "blue", main = "Density of Mortgages Originated in 2006", xlab = "Original LTV", ylab="Density" )
+polygon(d06,col = "aliceblue",border = "blue")
+
+legend('topleft', legend = 'loan 06', col = 'black', cex = 1.2)
+par
+
+par(mfrow=c(1,1))
+plot(d07, type = "l", col = "blue", main = "Density of Mortgages Originated in 04-08", xlab = "Original LTV", ylab="Density" )
+lines(d05,type = "l",col = "red")
+lines(d06,type = "l",col = "green")
+lines(d07,type = "l",col = "black")
+lines(d08,type = "l",col = "orange")
+legend('topleft', legend = c('04','05','06','07','07','08'), col = c('blue','red','green','black','orange', fill = 1:5, cex = 1.2))
+
+
+
+lines(d09)
+lines(d10)
+
+
+drate03<-density(Acq03$ORIG_RT)
+drate04<-density(Acq04$ORIG_RT)
+drate05<-density(Acq05$ORIG_RT)
+drate06<-density(Acq06$ORIG_RT)
+drate07<-density(Acq07$ORIG_RT)
+drate08<-density(Acq08$ORIG_RT)
+drate09<-density(Acq09$ORIG_RT)
+
+
+
+plot(drate04)
+plot(drate05)
+plot(drate06)
+plot(drate07)
+
+par(mfrow=c(1,1))
+plot(Acq04$OLTV,Acq04$ORIG_RT, type ="h")
+
+hist(Acq03$OLTV, breaks =200, main = "Loan Originated in 2003, 100 bins",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages")
+hist(Acq04$OLTV, breaks =200, main = "Loan Originated in 2004, 100 bins",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages")
+hist(Acq05$OLTV, breaks =200, main = "Loan Originated in 2005, 100 bins",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages")
+hist(Acq06$OLTV, breaks =200, main = "Histogram: Loan Originated in 2006",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages")
+hist(Acq07$OLTV, breaks =200, main = "Loan Originated in 2007, 100 bins",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages")
+hist(Acq08$OLTV, breaks =200, main = "Loan Originated in 2008, 100 bins",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages")
+hist(Acq09$OLTV, breaks =200, main = "Loan Originated in 2009, 100 bins",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages")
+hist(Acq10$OLTV, breaks =200, main = "Loan Originated in 2010, 100 bins",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages")
+
+hist(Acq03$OCLTV, xlim=c(30,130), breaks = 20)
+hist(Acq04$OCLTV, xlim=c(30,130), breaks = 20)
+hist(Acq05$OCLTV, xlim=c(30,130), breaks = 20)
+hist(Acq06$OCLTV, xlim=c(65,95), breaks = 200, main = "Histogram: Loan Originated in 2006, narrow range",col = "aliceblue",border = "blue", xlab = "Original LTV", ylab="# of mortgages",)
+hist(Acq07$OCLTV, xlim=c(30,130), breaks = 20)
+hist(Acq08$OCLTV, xlim=c(30,130), breaks = 20)
+hist(Acq09$OCLTV, xlim=c(30,130), breaks = 20)
+hist(Acq10$OCLTV, xlim=c(30,130), breaks = 20)
+
+aggregate(d[, 3:4], list(d$Name), mean)
+
+# list all files names inside of a .zip file
+fnames = as.character(unzip("Acquisition_All.zip", list = TRUE)$Name)
+fnames
+# read every file into R, assuming they are .csv files
+lst = vector("list", length(fnames))
+for (i in seq_along(fnames))
+  lst[[i]] = read.table(unz("Acquisition_All.zip", fnames[i]), stringsAsFactors = F)
+
+###Data_A<- fread(Acquisitions[k], sep = "|", colClasses = Acquisition_ColClasses, showProgress=FALSE)
